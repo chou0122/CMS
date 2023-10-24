@@ -4,13 +4,13 @@
   header("Access-Control-Allow-Methods: GET");
 
   get_db();
-
+  include("log.php");
   function get_db() {
     $servername = "localhost";
     $username = "db_admin";
     $password = "P@ssw0rd";
     $dbname = "mfee43_03";
-  
+
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
     // Check connection

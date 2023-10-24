@@ -4,7 +4,7 @@
   header("Access-Control-Allow-Methods: POST");
 
   get_post_payload();
-
+  include("log.php");
   function get_post_payload() {
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
       $form_data = new stdClass();
@@ -20,10 +20,6 @@
   }
 
   function post_db($form_data) {
-    $servername = "localhost";
-    $username = "db_admin";
-    $password = "P@ssw0rd";
-    $dbname = "mfee43_03";
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);

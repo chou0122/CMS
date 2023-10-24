@@ -4,7 +4,7 @@
   header("Access-Control-Allow-Methods: DELETE");
 
   parse_delete_payload();
-
+  include("log.php");
   function parse_delete_payload() {
     if ($_SERVER["REQUEST_METHOD"] === "DELETE") {
       delete_user($_GET['id']);
@@ -12,10 +12,7 @@
   }
 
   function delete_user($id) {
-    $servername = "localhost";
-    $username = "db_admin";
-    $password = "P@ssw0rd";
-    $dbname = "mfee43_03";
+
     
     // Create connection
     $conn = new mysqli($servername, $username, $password, $dbname);
