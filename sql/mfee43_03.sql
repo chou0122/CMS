@@ -31,7 +31,7 @@ CREATE TABLE `user_table` (
   `u_id` int(11) NOT NULL,
   `u_name` varchar(6) DEFAULT NULL,
   `u_acco` varchar(12) DEFAULT NULL,
-  `u_brith` varchar(7) DEFAULT NULL,
+  `u_brith` int(8) DEFAULT NULL,
   `u_email` varchar(40) DEFAULT NULL,
   `u_pw` char(40) NOT NULL,
   `u_tel` varchar(25) DEFAULT NULL
