@@ -64,6 +64,7 @@ function define(html) {
           event.preventDefault();
           this.checkForm();
         });
+        
       //   this._modal = this.shadowRoot.querySelector(".modal");
       //   this.shadowRoot.querySelector("button").addEventListener('click',        this._showModal.bind(this));
       //   this.shadowRoot.querySelector(".close").addEventListener('click', this._hideModal.bind(this));
@@ -97,6 +98,7 @@ function define(html) {
         return false;
       }
       this.submit();
+
     }
 
     submit() {
