@@ -6,7 +6,7 @@ Content management system using web components, php, and MySQL.
 
 ### Installation and Pre-requests
 1. Install **xampp**.
-2. Create a folder named `cms` under `/applications/xampp/htdocs`.
+2. Create a folder named `cms` under `c/xampp/htdocs`.
 3. Copy files under `<GitBasePath>/cms/scr/php` to `<SystemBasePath>/xampp/htdocs/cms`.
 4. Start XAMPP.
 
